@@ -9,6 +9,7 @@
     "lint": "eslint src",
     "preview": "vite preview",
     "test": "jest",
+    "test:coverage": "jest --collect-coverage",
     "test:watch": "jest --watch"
   },
   "dependencies": {

@@ -4,16 +4,16 @@
 
 additional features:
 
-- [eslint](https://eslint.org/) for linting
-- [jest](https://jestjs.io/) + [testing-library](https://testing-library.com/) for testing
-- [prettier](https://prettier.io/) + [pre-commit](https://pre-commit.com/) (optional) for code formatting
-- [github actions](https://github.com/features/actions) for continuous integration
-- [browserslist](https://github.com/browserslist/browserslist) + [autoprefixer](https://github.com/postcss/autoprefixer)
+- [eslint](https://eslint.org/) for linting.
+- [jest](https://jestjs.io/) + [testing-library](https://testing-library.com/) for testing.
+- [prettier](https://prettier.io/) + (optional) [pre-commit](https://pre-commit.com/) hook for code formatting.
+- [github actions](https://github.com/features/actions) for continuous integration.
+- [browserslist](https://github.com/browserslist/browserslist) + [autoprefixer](https://github.com/postcss/autoprefixer).
 
 ## Install
 
 ```sh
-# install dependencies
+# install dependencies.
 npm i
 ```
 
@@ -32,10 +32,13 @@ npm run build
 ## Test
 
 ```sh
-npm run test
+npm test
 
-# run jest in watch mode
+# run jest in watch mode.
 npm run test:watch
+
+# collect coverage.
+npm run test:coverage
 ```
 
 ## Lint
