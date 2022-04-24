@@ -11,10 +11,10 @@ module.exports = {
   // required in order for the styleMock proxy to work.
   // @see https://github.com/keyz/identity-obj-proxy/issues/9#issuecomment-439625933
   globals: {
-    'ts-jest': {
+    "ts-jest": {
       tsconfig: {
-        esModuleInterop: true
-      }
-    }
+        esModuleInterop: true,
+      },
+    },
   },
 };

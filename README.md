@@ -6,7 +6,7 @@ additional features:
 
 - [eslint](https://eslint.org/) for linting
 - [jest](https://jestjs.io/) + [testing-library](https://testing-library.com/) for testing
-- [prettier](https://prettier.io/) + [pre-commit](https://pre-commit.com/) for code formatting
+- [prettier](https://prettier.io/) + [pre-commit](https://pre-commit.com/) (optional) for code formatting
 - [github actions](https://github.com/features/actions) for continuous integration
 - [browserslist](https://github.com/browserslist/browserslist) + [autoprefixer](https://github.com/postcss/autoprefixer)
 
@@ -32,7 +32,10 @@ npm run build
 ## Test
 
 ```sh
-npm test
+npm run test
+
+# run jest in watch mode
+npm run test:watch
 ```
 
 ## Lint
