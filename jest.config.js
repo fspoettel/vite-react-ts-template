@@ -4,7 +4,7 @@ module.exports = {
     "\\.(css|sass|scss)$": "<rootDir>/test/__mocks__/styleMock.js",
     "\\.(gif|jpg|png|svg)$": "<rootDir>/test/__mocks__/fileMock.js",
   },
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  setupFilesAfterEnv: ["<rootDir>/test/jest.setup.js"],
   testEnvironment: "jsdom",
   transform: {
     "^.+\\.tsx?$": "ts-jest",
