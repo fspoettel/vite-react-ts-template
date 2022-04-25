@@ -1,26 +1,33 @@
 import { useState } from "react";
 import logo from "./logo.svg";
-import css from "./App.module.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className={css["App"]}>
-      <header className={css["App-header"]}>
-        <img src={logo} className={css["App-logo"]} alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+    <div className="text-center">
+      <header className="flex min-h-screen flex-col items-center justify-center bg-slate-800 text-base text-white">
+        <img
+          src={logo}
+          className="pointer-events-none h-40 animate-pulse"
+          alt="logo"
+        />
+        <p className="mb-4 text-2xl">Hello Vite + React!</p>
+        <p className="mb-4">
+          <button
+            className="inline-block rounded border-2 border-solid border-slate-100 p-2 hover:border-slate-400"
+            type="button"
+            onClick={() => setCount((count) => count + 1)}
+          >
             count is: {count}
           </button>
         </p>
-        <p>
+        <p className="mb-4">
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
         <p>
           <a
-            className={css["App-link"]}
+            className="font-bold underline hover:opacity-75"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +36,7 @@ function App() {
           </a>
           {" | "}
           <a
-            className={css["App-link"]}
+            className="text-cyan-400 hover:opacity-75"
             href="https://vitejs.dev/guide/features.html"
             target="_blank"
             rel="noopener noreferrer"
