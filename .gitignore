@@ -25,3 +25,6 @@ dist-ssr
 
 # coverage
 coverage
+
+# generated graphql code
+src/graphql/generated.ts

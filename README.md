@@ -78,6 +78,15 @@ Serves the content of `./dist` over a local http server.
 npm run preview
 ```
 
+## GraphQL
+
+Typescript typings and queries are auto-generated from raw `.graphql` queries in `./src/graphql/queries`. See [here](https://www.graphql-code-generator.com/docs/guides/react#optimal-configuration-for-apollo-and-urql) for more details.
+
+```sh
+# generate typed graphql queries and mutations.
+npm run graphql:generate
+```
+
 ## Recipes
 
 Recipes for integrating common libraries can be found on separate `recipe/*` branches.

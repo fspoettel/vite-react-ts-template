@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "fmt": "prettier --write .",
+    "graphql:generate": "graphql-codegen",
     "lint": "eslint src",
     "preview": "vite preview",
     "test": "jest",
@@ -14,9 +15,15 @@
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "graphql": "16.3.0",
+    "urql": "2.2.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/typed-document-node": "2.2.8",
+    "@graphql-codegen/typescript": "2.4.8",
+    "@graphql-codegen/typescript-operations": "2.3.5",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.1.1",
     "@testing-library/user-event": "14.1.1",
