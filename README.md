@@ -77,3 +77,7 @@ Serves the content of `./dist` over a local http server.
 ```sh
 npm run preview
 ```
+
+## Recipes
+
+Recipes for integrating common libraries can be found on separate `recipe/*` branches.
