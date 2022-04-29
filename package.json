@@ -3,8 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "npm run build:wasm && vite",
+    "build": "npm run build:wasm -- --release && tsc && vite build",
+    "build:wasm": "npm run clean:wasm && wasm-pack build example-crate --target web --out-dir ../src/example-crate",
+    "clean:wasm": "rm -rf ./src/example-crate",
     "fmt": "prettier --write .",
     "lint": "eslint src",
     "preview": "vite preview",
@@ -35,6 +37,7 @@
     "prettier": "2.6.2",
     "ts-jest": "27.1.4",
     "typescript": "4.6.4",
-    "vite": "2.9.6"
+    "vite": "2.9.6",
+    "wasm-pack": "^0.10.2"
   }
 }

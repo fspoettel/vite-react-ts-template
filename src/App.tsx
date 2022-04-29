@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import loadCrate from "./example-crate";
 import logo from "./logo.svg";
 import css from "./App.module.css";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    loadCrate().then((crate) => {
+      setCount(crate.add(12, 23));
+    });
+  }, []);
 
   return (
     <div className={css["App"]}>
