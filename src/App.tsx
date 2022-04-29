@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import loadCrate from "./example-crate";
+import loadCrate from "./example_crate";
 import logo from "./logo.svg";
 import css from "./App.module.css";
 

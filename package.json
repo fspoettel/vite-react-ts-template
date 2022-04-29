@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm run build:wasm && vite",
     "build": "npm run build:wasm -- --release && tsc && vite build",
-    "build:wasm": "npm run clean:wasm && wasm-pack build example-crate --target web --out-dir ../src/example-crate",
+    "build:wasm": "npm run clean:wasm && wasm-pack build example_crate --target web --out-dir ../src/example_crate",
     "clean:wasm": "rm -rf ./src/example-crate",
     "fmt": "prettier --write .",
     "lint": "eslint src",
