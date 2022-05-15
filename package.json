@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "jest",
     "test:coverage": "jest --collect-coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "types:check": "tsc --noEmit"
   },
   "dependencies": {
     "react": "18.1.0",

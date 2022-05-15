@@ -1,4 +1,4 @@
-name: eslint
+name: check typings
 on: push
 jobs:
   lint:
@@ -9,4 +9,4 @@ jobs:
         with:
           node-version: "16"
       - run: npm ci
-      - run: npm run lint
+      - run: npm run types:check
