@@ -1,4 +1,4 @@
-name: jest
+name: vitest
 on: push
 jobs:
   test:
