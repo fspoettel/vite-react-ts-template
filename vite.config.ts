@@ -12,7 +12,7 @@ export default defineConfig({
     setupFiles: "./test/setup.ts",
     passWithNoTests: true,
     coverage: {
-      provider: 'istanbul'
+      provider: "istanbul",
     },
   },
 });
