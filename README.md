@@ -6,7 +6,7 @@ additional features:
 
 - [eslint](https://eslint.org/) for linting.
 - [vitest](https://vitest.dev/) + [testing-library](https://testing-library.com/) for testing.
-- [prettier](https://prettier.io/) + (optional) [pre-commit](https://pre-commit.com/) hook for code formatting.
+- [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
 - [github actions](https://github.com/features/actions) for continuous integration.
 - [browserslist](https://github.com/browserslist/browserslist) + [autoprefixer](https://github.com/postcss/autoprefixer).
 
@@ -53,22 +53,7 @@ npm run lint
 npm run fmt
 ```
 
-There is an optional [pre-commit](https://pre-commit.com/) hook to format code on commit. You need to install and activate it in order to use it.
-
-```sh
-# (macos) install via brew.
-brew install pre-commit
-# (any system) install via python's pip.
-pip3 install pre-commit
-
-# activate the hook.
-pre-commit install
-
-# when updating prettier, update the hook.
-pre-commit autoupdate
-```
-
-This template uses [pre-commit](https://pre-commit.com/) over [lint-staged](https://github.com/okonet/lint-staged) due to the author's familiarity with it and its great support for other programming languages.
+Prettier will be run automatically on commit via [lint-staged](https://github.com/okonet/lint-staged).
 
 ## Preview
 

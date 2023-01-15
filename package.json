@@ -6,15 +6,16 @@
     "node": "18"
   },
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "check": "tsc --noEmit",
+    "dev": "vite",
     "fmt": "prettier --write .",
     "lint": "eslint src",
+    "prepare": "husky install",
     "preview": "vite preview",
-    "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch",
-    "check": "tsc --noEmit"
+    "test": "vitest run"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -35,7 +36,9 @@
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-react": "7.32.0",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.3",
     "jsdom": "21.0.0",
+    "lint-staged": "13.1.0",
     "prettier": "2.8.3",
     "typescript": "4.9.4",
     "vite": "4.0.4",
