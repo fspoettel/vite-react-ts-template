@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "engines": {
-    "node": "18"
+    "node": "^20"
   },
   "scripts": {
     "build": "tsc && vite build",
@@ -22,26 +22,26 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
-    "@typescript-eslint/eslint-plugin": "5.60.1",
-    "@typescript-eslint/parser": "5.60.1",
-    "@vitejs/plugin-react": "4.0.1",
-    "@vitest/coverage-istanbul": "0.32.4",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
+    "@vitejs/plugin-react": "4.0.4",
+    "@vitest/coverage-istanbul": "0.34.1",
     "autoprefixer": "10.4.14",
-    "eslint": "8.44.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-react": "7.32.2",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-plugin-react": "7.33.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "husky": "8.0.3",
     "jsdom": "22.1.0",
     "lint-staged": "13.2.3",
-    "prettier": "2.8.8",
+    "prettier": "3.0.1",
     "typescript": "5.1.6",
-    "vite": "4.3.9",
+    "vite": "4.4.8",
     "vitest": "0.32.4"
   }
 }
