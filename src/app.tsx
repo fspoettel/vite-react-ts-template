@@ -1,4 +1,4 @@
-import css from "./App.module.css";
+import css from "./app.module.css";
 
 function App() {
   return <main className={css["app"]}>React ❤️ Vite</main>;
