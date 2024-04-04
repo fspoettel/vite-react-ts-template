@@ -1,7 +1,8 @@
 /// <reference types="vitest" />
 
+import browserslist from "browserslist";
+import { browserslistToTargets } from "lightningcss";
 import { defineConfig } from "vite";
-import autoprefixer from "autoprefixer";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
 
@@ -13,9 +14,13 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    cssMinify: "lightningcss",
+  },
   css: {
-    postcss: {
-      plugins: [autoprefixer()],
+    transformer: "lightningcss",
+    lightningcss: {
+      targets: browserslistToTargets(browserslist()),
     },
   },
   test: {

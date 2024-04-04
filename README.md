@@ -8,7 +8,7 @@ additional features:
 - [vitest](https://vitest.dev/) + [testing-library](https://testing-library.com/) for testing.
 - [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
 - [github actions](https://github.com/features/actions) for continuous integration.
-- [browserslist](https://github.com/browserslist/browserslist) + [autoprefixer](https://github.com/postcss/autoprefixer).
+- [lightningcss](https://lightningcss.dev/) + [browserslist](https://github.com/browserslist/browserslist) for CSS transpilation.
 
 ## Install
 
