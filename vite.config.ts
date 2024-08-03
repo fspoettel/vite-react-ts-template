@@ -1,30 +1,25 @@
 /// <reference types="vitest" />
 
-import browserslist from "browserslist";
-import { browserslistToTargets } from "lightningcss";
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import path from "node:path";
+import react from "@vitejs/plugin-react";
+import autoprefixer from "autoprefixer";
+import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  css: {
+    postcss: {
+      plugins: [autoprefixer()],
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    cssMinify: "lightningcss",
-  },
-  css: {
-    transformer: "lightningcss",
-    lightningcss: {
-      targets: browserslistToTargets(browserslist()),
-    },
-  },
   test: {
-    environment: "jsdom",
+    environment: "happy-dom",
     setupFiles: "./test/setup.ts",
     passWithNoTests: true,
     coverage: {

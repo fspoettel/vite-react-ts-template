@@ -4,17 +4,19 @@
 
 additional features:
 
-- [eslint](https://eslint.org/) for linting.
+- [biome](https://biomejs.dev/) for formatting and linting.
 - [vitest](https://vitest.dev/) + [testing-library](https://testing-library.com/) for testing.
-- [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
+- [lefthook](https://github.com/evilmartians/lefthook) hook for pre-commit checks.
 - [github actions](https://github.com/features/actions) for continuous integration.
-- [lightningcss](https://lightningcss.dev/) + [browserslist](https://github.com/browserslist/browserslist) for CSS transpilation.
 
 ## Install
 
 ```sh
 # install dependencies.
 npm i
+
+# (optional) install pre-commit hook.
+npm run precommit:configure
 ```
 
 ## Develop
@@ -52,8 +54,6 @@ npm run lint
 ```sh
 npm run fmt
 ```
-
-Prettier will be run automatically on commit via [lint-staged](https://github.com/okonet/lint-staged).
 
 ## Preview
 

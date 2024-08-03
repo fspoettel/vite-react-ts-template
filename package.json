@@ -4,46 +4,38 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": "^20"
+    "node": "20.x"
   },
   "scripts": {
     "build": "tsc && vite build",
     "check": "tsc --noEmit",
     "dev": "vite",
-    "fmt": "prettier --write .",
-    "lint": "eslint src",
-    "prepare": "husky",
+    "fmt": "biome check --write",
+    "lint": "biome check",
+    "precommit:configure": "lefthook install",
     "preview": "vite preview",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch",
     "test": "vitest run"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "6.4.2",
-    "@testing-library/react": "15.0.2",
+    "@biomejs/biome": "1.8.3",
+    "@testing-library/jest-dom": "6.4.8",
+    "@testing-library/react": "16.0.0",
     "@testing-library/user-event": "14.5.2",
-    "@types/react": "18.2.78",
-    "@types/react-dom": "18.2.25",
-    "@typescript-eslint/eslint-plugin": "7.6.0",
-    "@typescript-eslint/parser": "7.6.0",
-    "@vitejs/plugin-react": "4.2.1",
-    "@vitest/coverage-v8": "1.5.0",
-    "browserslist": "4.23.0",
-    "eslint": "8.57.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-react": "7.34.1",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "husky": "9.0.11",
-    "jsdom": "24.0.0",
-    "lightningcss": "1.24.1",
-    "lint-staged": "15.2.2",
-    "prettier": "3.2.5",
-    "typescript": "5.4.5",
-    "vite": "5.2.8",
-    "vitest": "1.5.0"
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "@vitest/coverage-v8": "2.0.5",
+    "autoprefixer": "10.4.20",
+    "happy-dom": "14.12.3",
+    "lefthook": "1.7.11",
+    "typescript": "5.5.4",
+    "vite": "5.3.5",
+    "vitest": "2.0.5"
   }
 }
